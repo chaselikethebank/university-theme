@@ -1169,10 +1169,10 @@ body.admin-bar .search-overlay {
   left: 0;
   right: 0;
   padding: 3px 10px;
-  background-color: rgba(240, 54, 19, 0.85);
+  background-color: rgba(19, 111, 240, 0.85);
 }
 .professor-card:hover .professor-card__name {
-  background-color: rgba(215, 46, 14, 0.85);
+  background-color: rgba(14, 71, 215, 0.85);
 }
 .professor-card__list-item {
   display: inline-block;
