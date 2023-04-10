@@ -14,6 +14,10 @@
     add_action('wp_enqueue_scripts', 'uni_files');
 
     function uni_features() {
+        // register_nav_menu('headerMenu', 'Header Menu');
+        // register_nav_menu('footerMenuOne', 'Footer Menu One');
+        // register_nav_menu('footerMenuTwo', 'Footer Menu Two');
+
         add_theme_support('title-tag');
     }
     

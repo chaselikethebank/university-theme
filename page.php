@@ -28,8 +28,10 @@ get_header();
             <a class="metabox__blog-home-link" href="<?php echo get_permalink($parent_ID)?>"><i class="fa fa-home"
                     aria-hidden="true"></i> Back
                 to
-                <?php echo get_the_title($parent_ID)?></a> <span
-                class="metabox__main"><?php the_title($parent_ID)?></span>
+                <?php echo get_the_title($parent_ID)?></a>
+            <span class="metabox__main">
+                <?php echo the_title()?>
+            </span>
         </p>
     </div>
     <?php
@@ -45,8 +47,9 @@ get_header();
     
     if ($parent_ID or $isAParent) { ?>
     <div class="page-links">
-        <h2 class="page-links__title"><a
-                href="<?php echo get_permalink($parent_ID); ?>"><?php echo get_the_title($parent_ID) ?></a>
+        <h2 class="page-links__title"><a href="
+            <?php echo get_permalink($parent_ID); ?>">
+                <?php echo get_the_title($parent_ID) ?></a>
         </h2>
         <ul class="min-list">
             <?php 

@@ -1232,7 +1232,7 @@ body.admin-bar .search-overlay {
   text-decoration: none;
 }
 .headline--post-title a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .generic-content p,
 .generic-content li {
