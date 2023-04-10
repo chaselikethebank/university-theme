@@ -38,7 +38,7 @@ get_header();
             <p>
             </p>
             <p>
-                <a class="btn btn--blue" href="<?php get_permalink()?>">Deep Dive</a>
+                <a class="btn btn--blue" href="<?php get_permalink()?>">Deep Dive 🤿 </a>
 
             </p>
         </div>
