@@ -184,7 +184,7 @@ li {
   animation: spin 1s infinite linear;
 }
 .c-orange {
-  color: #f95738;
+  color: #4f38f9;
 }
 .c-blue {
   color: #0d3b66;
@@ -233,19 +233,19 @@ li {
   opacity: 0.75;
 }
 .social-color-facebook {
-  background-color: #4862a3;
+  background-color: #a9a9a9;
 }
 .social-color-twitter {
-  background-color: #55acee;
+  background-color: #a9a9a9;
 }
 .social-color-youtube {
-  background-color: #cc1e1f;
+  background-color: #a9a9a9;
 }
 .social-color-linkedin {
-  background-color: #0077b5;
+  background-color: #a9a9a9;
 }
 .social-color-instagram {
-  background-color: #d8226b;
+  background-color: #a9a9a9;
 }
 .nav-list ul {
   padding: 0;
@@ -442,16 +442,16 @@ body.login {
   position: relative;
 }
 .btn--orange {
-  background-color: #ee964b;
+  background-color: #4b6cee;
 }
 .btn--orange:hover {
-  background: linear-gradient(#ee964b, #eb6c00);
+  background: linear-gradient(#4ba2ee, #005eeb);
 }
 .btn--dark-orange {
-  background-color: #f95738;
+  background-color: #3845f9;
 }
 .btn--dark-orange:hover {
-  background: linear-gradient(#f95738, #c62000);
+  background: linear-gradient(#3865f9, #0021c6);
 }
 .btn--blue {
   background-color: #0d3b66;

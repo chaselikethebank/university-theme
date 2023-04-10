@@ -25,7 +25,8 @@ get_header();
                     <?php the_title(); ?>
                 </a></h2>
             <div class="metabox">
-                <P>i posted it on a day in time
+                <P> Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y');?> in
+                    <?php echo get_the_category_list(', '); ?>
 
 
             </div>
@@ -37,7 +38,7 @@ get_header();
             <p>
             </p>
             <p>
-                <a class="btn btn--blue" href="<?php get_permalink()?>">Continue</a>
+                <a class="btn btn--blue" href="<?php get_permalink()?>">Deep Dive</a>
 
             </p>
         </div>
