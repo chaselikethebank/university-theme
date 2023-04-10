@@ -41,16 +41,17 @@ get_header();
                 <a class="btn btn--blue" href="<?php get_permalink()?>">Deep Dive 🤿 </a>
 
             </p>
+
         </div>
+        <?php     echo paginate_links();
+ ?>
     </div>
 
 </div>
-<?php
-            
-        }
+<?php }
     ?>
 
-</?div>
+</div>
 
 
 <?php
