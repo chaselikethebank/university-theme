@@ -18,8 +18,9 @@
             <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
             <?php 
                 $eventList = new WP_Query(array(
-                    'posts_per_page' => 2,
+                    'posts_per_page' => -1,
                     'post_type' => 'event',
+                    'order_by' => 'title'
                 ));
 
                 while($eventList->have_posts()) {
@@ -33,7 +34,11 @@
                         
                         ?>
                     </span>
-                    <span class="event-summary__day">02</span>
+                    <span class="event-summary__day"><?php 
+                       $eventDate = new DateTime(get_field('event_date'));
+                        echo $eventDate->format('d');
+                        
+                        ?></span>
                 </a>
                 <div class="event-summary__content">
                     <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h5>
@@ -61,7 +66,7 @@
             <h2 class="headline headline--small-plus t-center">From Our Blogs</h2>
           <?php 
             $blogList = new WP_Query(array(
-                'posts_per_page' => 2,
+                'posts_per_page' => 3,
             )); 
 
             while ($blogList->have_posts()) {
@@ -93,43 +98,48 @@
     </div>
 </div>
 
-<div class="hero-slider">
-    <div data-glide-el="track" class="glide__track">
-        <div class="glide__slides">
+<!-- <div class="hero-slider"> -->
+    <!-- <div data-glide-el="track" class="glide__track"> -->
+        <!-- <div class="glide__slides"> -->
             <div class="hero-slider__slide"
-                style="background-image: url(<?php echo get_theme_file_uri('images/vavles_and_bf.jpg')?>)">
+                style="background: yellow">
+                <!-- "background-image: url(<?php echo get_theme_file_uri('images/vavles_and_bf.jpg')?>)" -->
+                
+                
                 <div class="hero-slider__interior container">
                     <div class="hero-slider__overlay">
-                        <h2 class="headline headline--medium t-center">Irrigation Technician</h2>
-                        <p class="t-center">The fundamentals of Irrigation</p>
-                        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+                        <h2 class="headline headline--medium t-center">IT</h2>
+                        <p class="t-center">The fundamentals</p>
+                        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Deep Dive 🤿</a></p>
                     </div>
                 </div>
             </div>
             <div class="hero-slider__slide"
-                style="background-image: url(<?php echo get_theme_file_uri('images/bf.jpg') ?>)">
+                style="background: yellow">
                 <div class="hero-slider__interior container">
                     <div class="hero-slider__overlay">
-                        <h2 class="headline headline--medium t-center">BPAT</h2>
-                        <p class="t-center">Take our Backflow Prevention Assembly Tester Course</p>
-                        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+                        <h2 class="headline headline--medium t-center">Headless</h2>
+                        <p class="t-center">Integration Testing</p>
+                        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Deep Dive 🤿</a></p>
                     </div>
                 </div>
             </div>
             <div class="hero-slider__slide"
-                style="background-image: url(<?php echo get_theme_file_uri('images/rotors.jpg') ?>)">
+                style="background: yellow">
                 <div class="hero-slider__interior container">
                     <div class="hero-slider__overlay">
-                        <h2 class="headline headline--medium t-center">Texas Landscape Irrigator</h2>
-                        <p class="t-center">Take our full Landscape Irrigator course</p>
-                        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+                        <h2 class="headline headline--medium t-center">Docker</h2>
+                        <p class="t-center">Docker for Vector DBs</p>
+                        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Deep Dive 🤿</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
-    </div>
-</div>
+        <!-- <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"> -->
+
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </div> -->
 
 
 <?php
